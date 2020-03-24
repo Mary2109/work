@@ -16,7 +16,7 @@ body{
     width: 100%;
     border: 0.5px solid #E0E0E0;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 90px;
     
     position: fixed;
 }
@@ -43,8 +43,8 @@ a:hover{
     align-self: center;
     align-content: center;
     position: fixed;
-    margin-top: 20px;
-
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 .main{
     background-image: url("main.png");
@@ -68,7 +68,7 @@ a:hover{
     font-size: 48px;
     color: #FFFFFF;
     
-    width: 700px;
+    width: 80%;
     text-align: center;
     font-weight: 900;
     margin-top: 30px;
@@ -97,6 +97,8 @@ a:hover{
 }
 .services__icon{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .services__title{
     
@@ -116,7 +118,7 @@ a:hover{
 }
 .services__item{
     padding-top: 30px;
-    width: 33%;
+    width: 300px;
     height: 180px;
     display: flex;
     padding-top: 60px;
@@ -178,7 +180,7 @@ a:hover{
 }
 .about-us_right{
     padding-left: 40px;
-    width: 45%;
+    width: 50%;
 }
 .about-us_right_laptop{
     width: 100%;
@@ -196,7 +198,7 @@ a:hover{
 }
 .about-us__title{
     font-size: 36px;
-    width: 80%;
+    width: 100%;
     font-weight: bold;
 }
 .about-us__line{
@@ -260,9 +262,10 @@ a:hover{
 }
 .specialization__prewiew{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     padding-top: 50px;
+    flex-wrap: wrap;
 
 }
 .color{
@@ -271,7 +274,9 @@ a:hover{
 .specialization__prewiew_item{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 320px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 .specialization__prewiew_foto_item{
     width: 100%;
@@ -306,13 +311,19 @@ a:hover{
 }
 .projects__content_item{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 45px;
+    flex-wrap: wrap;
+    
     
 }
+.projects__content_item_foto{
+    width: 250px;
+    padding-left: 20px;
+}
 .projects__content_item_foto_prewiew{
-    width: 90%;
+    width: 100%;
 }
 .projects__content_title{
     font-weight: bold;
@@ -337,6 +348,8 @@ a:hover{
     padding-top: 15px;
     background: #4985FF;
     margin-bottom: 120px;
+    animation-name: layout;
+    animation-direction: 3s;
 }
 .video{
     width: 100%;
@@ -441,6 +454,7 @@ a:hover{
     width: 60%;
     margin-bottom: 40px;
     
+    
 }
 input[type="search"]{
     background: #FFFFFF;
@@ -490,9 +504,10 @@ input[type="submit"]{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 .footer__content_text_block{
-    width: 25%;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -538,4 +553,68 @@ input[type="submit"]{
 }
 .footer__content_text_block_item_left{
    padding-right: 10%;
+}
+@media (max-width:768px){
+    .subcribe__contect_button{
+        width: 90%;
+    }
+    .footer__content_text{
+        justify-content: center;
+    }
+    .about-us__content{
+        flex-wrap: wrap;
+    }
+    .about-us_left{
+        width: 100%;
+        text-align: center;
+    }
+    .about-us__text{
+        width: 100%;
+    }
+    .about-us_right{
+        width: 80%;
+        padding-left: 0%;
+    }
+    .video__content_prewiew_button_right{
+        font-size: 15px;
+    }
+    .video__content_prewiew_button_left_play{
+        width: 40px;
+    }
+}
+
+@media (max-width:426px){
+    .video__content_prewiew_button{
+        width: 60%;
+    }
+    .specialization__text_title{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .header__text{
+        margin-top: 15px;
+        justify-content: space-around;
+    }
+    .header__item{
+        width: 100px;
+        padding-left: 15px;
+    }
+    input[type="submit"]{
+        font-size: 11px;
+    }
+    input[type="search"]{
+        font-size: 9px;
+    }
+    .services__title{
+        width: 100%;
+    }
+    .video__content_prewiew{
+        height: 300px;
+    }
+    .video__content_text{
+        padding-bottom: 40px;
+    }
+    .video__content_prewiew_button_right{
+        padding-left: 7px;
+    }
 }
